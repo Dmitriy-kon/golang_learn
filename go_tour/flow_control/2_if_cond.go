@@ -8,8 +8,9 @@ import (
 func sqrt(x float64) string {
 	if x < 0 {
 		return sqrt(-x) + "i"
+	} else {
+		return fmt.Sprintf("%.2f", math.Sqrt(x))
 	}
-	return fmt.Sprintf("%.2f", math.Sqrt(x))
 }
 
 func main() {
