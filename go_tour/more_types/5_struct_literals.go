@@ -8,7 +8,7 @@ type Vertex struct {
 
 var (
 	v1 = Vertex{1, 2}
-	v2 = Vertex{X: 1}
+	v2 = Vertex{X: 1, Y: 21}
 	v3 = Vertex{}
 
 	p = &Vertex{1, 2}

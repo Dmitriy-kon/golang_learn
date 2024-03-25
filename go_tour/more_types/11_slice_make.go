@@ -20,4 +20,7 @@ func main() {
 	d := c[2:5]
 	printSlice("d", d)
 
+	e := c[1:]
+	printSlice("e", e)
+
 }

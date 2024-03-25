@@ -6,8 +6,10 @@ func main() {
 	i, j := 32, 1020
 
 	p := &i
-	fmt.Printf("%p\n", p)
-	fmt.Println(*p, j)
-	*p /= 10
-	fmt.Println(*p, j)
+	fmt.Printf("%d\n", *p)
+
+	newP := &j
+	*newP /= 10
+
+	fmt.Printf("%d", *newP)
 }
