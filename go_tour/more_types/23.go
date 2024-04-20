@@ -8,9 +8,9 @@ func fibonacci() func() int {
 	a, b := 0, 1
 
 	return func() int {
-		res := a
-		a, b = b, a+b
-		return res
+		// res := a
+		defer (a, b = b, a+b)
+		return a
 	}
 }
 
